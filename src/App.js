@@ -8,30 +8,41 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
+import Header from './Header'
+import Main from './Main'
+import {Routes, Route} from 'react-router-dom'
+import MyMaps from './MyMaps'
+import Development from './Development';
+import Iterative from './Iterative'
+import Responsive from './Responsive';
+import {BrowserRouter as Router} from 'react-router-dom'
+import { ChakraProvider } from '@chakra-ui/react'
+import { RecoilRoot } from 'recoil'
 
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-      </header>
-      <body>
-        <Navbar/> 
-        <Home/>
-      </body>
-    </div>
+    <RecoilRoot>
+    <Router>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/myMaps' element={<MyMaps/>}/>
+      <Route path='/development' element={<Development/>}/>
+      <Route path='/iterative' element={<Iterative/>}/>
+      <Route path='/responsive' element={<Responsive/>}/>
+    </Routes>
+    </Router>
+    </RecoilRoot>
+   
+
+
+    // <div className="App">
+    //   <div>
+    //     <Header/>
+    //     <Main/>
+    //   </div>
+    // </div>
   );
 }
 

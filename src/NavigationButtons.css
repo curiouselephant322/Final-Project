@@ -1,0 +1,6 @@
+.navigation-button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: fit-content;
+}

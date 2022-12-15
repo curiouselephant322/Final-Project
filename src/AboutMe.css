@@ -1,0 +1,11 @@
+
+.about-me-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border: 1px solid white;
+  grid-area: aboutme;
+  background-color:  #212121;
+  color: white;
+  padding: 10px 10px;
+}
