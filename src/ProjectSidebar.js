@@ -15,6 +15,17 @@ const ProjectSidebar = ({name, description}) => {
                 <img style={{marginBottom: '10px', borderRadius: '6px'}} src="mern-stack.png" width="207px" height="75px"></img>
             </Tooltip>
         }
+        {(name == "Iterative Design" || name== "Responsive Redesign") &&
+          <div>
+              <Tooltip title="Balsamiq Wireframes">
+              <img src="balsamicIcon.png" width="48px" height="48px"></img>
+            </Tooltip>
+            <Tooltip title="Figma">
+              <img src="figmaIcon.png" width="48px" height="48px"></img> 
+            </Tooltip>   
+          </div>          
+        
+        }
         {name == "Development" && 
           <div>
             <Tooltip title="React">
@@ -37,14 +48,14 @@ const ProjectSidebar = ({name, description}) => {
               </Tooltip>      
             </div>      
         </div>
-        {name === "Development" || name=== "MyMaps Hypertext Application" && 
+        { (name === "Development" || name=== "MyMaps Hypertext Application")  &&
           <div style={{display: 'flex', gap: '10px'}}>
-            <Tooltip title="MaterialUI">
-              <img src="../muiIcon.png" width="48px" height="48px"></img>
+            <Tooltip title="Material UI">
+              <img src="muiIcon.png" width="48px" height="48px"></img>
             </Tooltip>
             {name === "MyMaps Hypertext Application" && 
               <Tooltip title="Chakra Ui">
-                <img src="../chakra-ui.png" width="48px" height="48px"></img>
+                <img src="chakra-ui.png" width="48px" height="48px"></img>
               </Tooltip>
               
             }

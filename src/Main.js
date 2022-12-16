@@ -7,35 +7,42 @@ const itemData = [
   {
     img: '/MyMaps.png',
     title: 'MyMaps Application',
-    description: 'A note-taking application with hypertext and hypermedia features',
+    description: 'A powerful route/journey logging application with hypertext features based around map nodes.',
     class: 'myMaps',
     id: 0,
+    link: '/myMaps'
   },
   {
     img: '/Development.png',
-    title: 'Development Project',
-    description: 'An interactive web application yielding that gives information about the teams in the UEFA Champions league',
+    title: 'Development',
+    description: 'An interactive web application yielding that gives information about the teams in the UEFA Champions league.',
     class: 'development',
     id: 1,
+    link: '/development'
   },
   {
     img:  '/Responsive.png',
     title: 'Responsive Redesign',
-    class: 'iterative',
-    id: 2
+    description: 'Redesigning a poorly made website as a responsive site using a design workflow process. ',
+    class: 'responsive',
+    id: 2,
+    link: '/responsive'
   },
   {
     img: 'Iterative.png',
     title: 'Iterative Design and Evaluation',
-    class: 'responsive',
-    id: 3
+    description: 'Designing, building and testing design prototypes for a startup concept.',
+    class: 'iterative',
+    id: 3,
+    link: '/iterative'
   },
 
 ]
 
 const Main = () => {
   return (
-    <div className="main-wrapper">  
+    <div className="main-wrapper"> 
+       
       <div className="main-grid">
         <AboutMe/>
         {itemData.map((project) => (

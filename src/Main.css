@@ -12,9 +12,9 @@
 
 
   grid-template-areas: 
-    "aboutme mymaps iterative"
+    "aboutme mymaps responsive"
     "aboutme development helper"
-    "aboutme development responsive";
+    "aboutme development iterative";
 }
 
 

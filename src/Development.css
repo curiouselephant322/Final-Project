@@ -1,4 +1,4 @@
-.project-wrapper {
+#project-wrapper {
   background-color: #212121;
   color: white;
   padding-top: 20px;
@@ -8,6 +8,10 @@
   grid-template-columns: 1fr 3.3fr 0.5fr;
   font-family: 'Courier New';
   height: calc(100vh - 175px);
+}
+
+.animate__animated.animate__backInLeft {
+  --animate-duration: 1.5s;
 }
 
 .project-content-wrapper {

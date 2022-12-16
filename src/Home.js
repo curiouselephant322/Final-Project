@@ -1,5 +1,6 @@
 import Header from './Header'
 import Main from './Main'
+import './Home.css'
 
 function Home () {
   return (
@@ -7,6 +8,7 @@ function Home () {
     <div className="App">
     <div>
       <Header/>
+      <div id="br"></div>
       <Main/>
     </div>
   </div>

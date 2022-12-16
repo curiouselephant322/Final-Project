@@ -3,6 +3,7 @@ import './Card.css'
 import React, { useEffect, useState } from 'react'
 import { SettingsInputAntennaTwoTone } from '@mui/icons-material'
 import AboutMe from './AboutMe'
+import { Link } from 'react-router-dom'
 
 const Card = ({project}) => {
 
@@ -30,9 +31,10 @@ const Card = ({project}) => {
   }
 
   return (
+   
     <div className={`card-wrapper ${project.class}`}>
+       <Link to={project.link}>
         <div className="card-image-wrapper">
-
           <img
             src={`${project.img}?w=248&fit=crop&auto=format`}
             srcSet={`${project.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -48,11 +50,9 @@ const Card = ({project}) => {
             </div>
         </div>
         </div>
-
-
-      
-
+        </Link>
     </div>
+
   )
 }
 

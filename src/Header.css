@@ -1,10 +1,12 @@
 .header-wrapper {
   padding: 0px 30px;
-  height: 120px;
+  height: 100px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   font-family: 'Courier';
   background-color: #212121;
+  flex-direction: row;
   color: white;
   
 }
@@ -12,13 +14,25 @@
 .student-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 12px;
 }
 
 .student-name {
   font-size: 1.8em;
 }
 
+.student-contact {
+  font-size: 0.8em;
+}
+
 .student-intro {
   font-weight: 300;
+}
+
+#home-button{
+  cursor: pointer;
+}
+
+#home-button:hover{
+  transform: scale(1.2);
 }

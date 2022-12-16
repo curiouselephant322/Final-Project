@@ -5,6 +5,7 @@ import NavigationButtons from './NavigationButtons'
 import {setRecoilState, useSetRecoilState, useRecoilValue} from 'recoil'
 import { animationState } from './atoms.js'
 import 'animate.css'
+import { Link } from 'react-router-dom'
 
 const Development = () => {
 
@@ -17,18 +18,20 @@ const Development = () => {
  
     <div>
       <Header/>
-      <br/>
-      <div className={`project-wrapper animate__animated ${className}`}>
+      <div id="br"></div>
+      <div id="project-wrapper" className='animate__animated animate__backInLeft'>
         <ProjectSidebar name="Development" description={description}/>
         <div className="project-content-wrapper">
+          <div style={{width: '97%'}}>
             <div className="project-right-wrapper">
               <img className='dev-image' src='../Development.png' align='right'></img>
               <div className='dev-goal'>
               </div>
               <div className="dev-right-main">
-              <h2>Goal</h2>
-                <p>The goal of this project was to develop an interactive interface for a list of data, using state to implement 
-                filtering, sorting, and aggregation features. </p>
+              <h2>Goal and Importance</h2>
+                <p>The purpose of this project was to develop an interactive interface for a list of data, using state to implement 
+                filtering, sorting, and aggregation features. Although this project was built using a small set of data, its purpose was 
+                to strengthen my understanding of state in React and to practice building a kind of interface that is very common to see online.</p>
                 <h2>Background</h2>
                 <p>I created a responsive app geared toward afficionados of the UEFA Champions League, with information about the 
                   participating teams and their groups. Teams can be grouped by country or by champions league group, and a number of 
@@ -37,13 +40,16 @@ const Development = () => {
                   current group rankings.
                 </p>
                 <h2>Reflection</h2>
-                <p>This project helped enforced my understanding of the concept of State in React. I became more familiar with the 
-                  MUI framework and more comfortable with media queries as I worked to make the site responsive.
+                <p>Although I was already familiar with the concept of state in React, as it is heavily used in some of my other projects such 
+                  as <Link style={{color: "cornflowerblue"}} to='/myMaps'> MyMaps</Link>
+                  , this project helped enforced my understanding of the concept of State in React. I also became more familiar with the 
+                  MUI framework and more comfortable with media queries as I worked to make the site visually appealing and responsive.
                 </p>
               </div>
-              <div className="dev-link" style={{marginTop: '10px'}}>
-                <a href="https://curiouselephant322.github.io/development/" style={{color: 'cornflowerblue'}}>See the website!</a>
+              <div className="dev-link" style={{marginTop: '10px', marginBottom: '20px'}}>
+                <a target="_blank" href="https://curiouselephant322.github.io/development/" style={{color: 'cornflowerblue'}}>See the website!</a>
                 </div> 
+            </div>
             </div>
         </div>
         <NavigationButtons name="Development"/>

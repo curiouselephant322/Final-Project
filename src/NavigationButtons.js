@@ -20,20 +20,20 @@ const NavigationButtons = ({name}) => {
     <div className="navigation-button-wrapper">
        {name == "MyMaps" &&
       <>
-      <div onClick={(e)=> handleNavigationClick(e, 0)}>
+      <div className='nav-button' onClick={(e)=> handleNavigationClick(e, 0)}>
         <Link to='/iterative'> <NavigateBeforeIcon color="primary"/> </Link>
       </div>
-      <div onClick={(e)=> handleNavigationClick(e, 1)}>
+      <div className='nav-button' onClick={(e)=> handleNavigationClick(e, 1)}>
         <Link to='/development'> <NavigateNextIcon color="primary"/> </Link>
       </div>
      </>
       }
       {name == "Development" && 
         <>
-        <div onClick={(e)=> handleNavigationClick(e, 0)}>
+        <div className='nav-button' onClick={(e)=> handleNavigationClick(e, 0)}>
           <Link to='/myMaps'> <NavigateBeforeIcon color="primary"/> </Link>
         </div>
-        <div onClick={(e)=> handleNavigationClick(e, 1)}>
+        <div className='nav-button' onClick={(e)=> handleNavigationClick(e, 1)}>
           <Link to='/responsive'> <NavigateNextIcon color="primary"/> </Link>
         </div>
          
@@ -42,10 +42,10 @@ const NavigationButtons = ({name}) => {
       }
       {name == "Responsive" && 
         <>
-        <div onClick={(e)=> handleNavigationClick(e, 0)}>
+        <div className='nav-button' onClick={(e)=> handleNavigationClick(e, 0)}>
           <Link to='/development'> <NavigateBeforeIcon color="primary"/> </Link>
         </div>
-        <div onClick={(e)=> handleNavigationClick(e, 1)}>
+        <div className='nav-button' onClick={(e)=> handleNavigationClick(e, 1)}>
           <Link to='/iterative'> <NavigateNextIcon color="primary"/> </Link>
         </div>
           
@@ -53,10 +53,10 @@ const NavigationButtons = ({name}) => {
       }
       {name == "Iterative" &&
       <>
-      <div onClick={(e)=> handleNavigationClick(e, 0)}>
+      <div className='nav-button' onClick={(e)=> handleNavigationClick(e, 0)}>
         <Link to='/responsive'> <NavigateBeforeIcon color="primary"/> </Link>
       </div>
-      <div onClick={(e)=> handleNavigationClick(e, 1)}>
+      <div className='nav-button' onClick={(e)=> handleNavigationClick(e, 1)}>
         <Link to='/myMaps'> <NavigateNextIcon color="primary"/> </Link>
       </div>
      </>

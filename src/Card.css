@@ -9,6 +9,8 @@
   width: fit-content;
   height: fit-content;
   border-radius: 12px;
+  color: white;
+  
 }
 .card-image-wrapper img {
   width: 100%;
