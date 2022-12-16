@@ -7,6 +7,7 @@ import { animationState } from './atoms.js'
 import 'animate.css'
 import { useEffect } from 'react';
 import './MyMaps.css'
+import { Link } from 'react-router-dom'
 
 
 
@@ -21,7 +22,7 @@ const MyMaps = () => {
   }, [animationStateVal])
   
 
-  const description= "A powerful route/journey logging application with hypertext features based around map nodes."
+  const description= "A powerful route/journey logging application with hypertext features, based around map nodes."
 
 
   return (
@@ -32,13 +33,17 @@ const MyMaps = () => {
       <div id="project-wrapper" className='animate__animated animate__backInLeft'>
         <ProjectSidebar name="MyMaps Hypertext Application" description={description}/>
         <div className="project-content-wrapper">
+           <div style={{width: '97%'}}>
+
             <div className="project-right-wrapper">
-              <h2>Goal</h2>
-              <p>The goal of this project was to build a hypertext/hypermedia MERN stack application for a particular (or a particular set of) use case(s). </p>
+              <h2>Goal and Importance</h2>
+              <p>The goal of this group project was to build a hypertext/hypermedia MERN stack application for a particular (or a particular set of) use case(s). 
+                The importance/value of the website comes from our consideration of these use cases, which are explained in further detail below. 
+              </p>
               <h2>Background</h2>
-                <p>We spent much of the semester building and extending a web application where users could add text, image, and folder nodes. 
+                <p>We spent much of the semester building and extending a web application where users could make can add to text, image, and folder nodes.
                   This site is a hypertext/hypermedia application in the sense that it supports bi-directional linking between all types of content. 
-                  MyMaps uses on this existing node structure to build a site that revolves around a map node.
+                  MyMaps uses this existing node structure to build a site that revolves around a map node.
                 </p>
               <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <img id="my-maps-main-img" src='MyMaps.png'></img>
@@ -47,10 +52,10 @@ const MyMaps = () => {
               <div>
                 <h2>Overview</h2>
                 <p></p>
-                <p>My Maps is a hypermedia app where users can upload an image of a map of their choosing (either a real-world or fantasy map),
+                <p>My Maps is a hypertext app where users can upload an image of a map of their choosing (either a real-world or fantasy map),
                    and then add pins to specific locations on the map. Each of these pins are a collection of one or more nodes that are relevant 
                    to that location. For example, the nodes could include pictures, stories, journal entries, and other records that are specific to 
-                   the pinned location. The pins on the map can also be connected through a directed trail called Route, with a customizable visual 
+                   the pinned location. The pins on the map can also be connected through a directed trail called a Route, with a customizable visual 
                    representation of the Route overlaid on the map view.
                 </p>
                 <p><i>In the image above, "Road Trip" is the map node, "Indianapolis" is one of the map's pins, and 
@@ -74,7 +79,7 @@ const MyMaps = () => {
                   <h4>2: For fantasy world afficionados</h4>
                   <p>Another use case would be for the fantasy fanatic. This app would provide the opportunity to upload their favorite map from a piece of media they 
                     enjoy or upload their own drawings as maps to trace the journey of their favorite characters.</p>
-                    <p>For example, a reader who enjoys <i>Lord of the Rings</i>  and wants to plot Frodo's path from the Shire to Mt. Doom could 
+                    <p>For example, a reader who enjoys <i>Lord of the Rings</i>  and wants to plot Frodo's path from the Shire to Mount Doom could 
                     upload an image of a map of Middle Earth and place pins along the route to indicate significant plot points. When clicking a pin, the user 
                     could write about what happened at that location in a text node, or upload screencaptures of the movie.</p>
                   <h2>Video Demo</h2>
@@ -89,10 +94,11 @@ const MyMaps = () => {
                   and the process behind designing and building a full-stack web application. Thinking about the use cases defined above, I believe 
                    we managed to build an app that someone would consider using, so we can say we met our goal. What's great is that this application's
                    robust structure is such that it can easily be further extended to support more useful features; any suggestions through my 
-                   contacts are always appreciated!
+                   contacts on the <Link to="/" style={{color: 'cornflowerblue'}}>Home</Link> page are always appreciated!
                 </p>
               </div>
             </div>
+        </div>
         </div>
         <NavigationButtons name="MyMaps"/>
       </div>

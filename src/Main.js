@@ -7,7 +7,7 @@ const itemData = [
   {
     img: '/MyMaps.png',
     title: 'MyMaps Application',
-    description: 'A powerful route/journey logging application with hypertext features based around map nodes.',
+    description: 'A powerful route/journey logging application with hypertext features, based around map nodes.',
     class: 'myMaps',
     id: 0,
     link: '/myMaps'
@@ -15,7 +15,7 @@ const itemData = [
   {
     img: '/Development.png',
     title: 'Development',
-    description: 'An interactive web application yielding that gives information about the teams in the UEFA Champions league.',
+    description: 'Building an interactive and responsive interface in React that gives information about the teams in the UEFA Champions league.',
     class: 'development',
     id: 1,
     link: '/development'

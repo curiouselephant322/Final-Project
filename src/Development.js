@@ -13,7 +13,7 @@ const Development = () => {
   const animationStateVal = useRecoilValue(animationState)
   const className = animationStateVal == 0 ? 'animated__backInRight' : 'animated__backInLeft'
 
-  const description = "Building an interactive and responsive interface in React"
+  const description = "Building an interactive and responsive interface in React."
   return (
  
     <div>
@@ -39,6 +39,14 @@ const Development = () => {
                   future reference. A standings view, implemented using an api call, is also available to better visualize the 
                   current group rankings.
                 </p>
+                <h2>Implementation</h2>
+                <p>The app filtering, sorting, and aggregation features are all implemented by making use of React state. 
+                  When a filter is changed (for example, when a specific country is selected from the dropdown menu) a trigger 
+                  function is called that updates the appropriate filter based on the value(s) of the dropdown. 
+                </p>
+                <div className="dev-link" style={{marginTop: '10px', marginBottom: '20px'}}>
+                <a target="_blank" href="https://curiouselephant322.github.io/development/" style={{color: 'cornflowerblue'}}>See the website here!</a>
+                </div> 
                 <h2>Reflection</h2>
                 <p>Although I was already familiar with the concept of state in React, as it is heavily used in some of my other projects such 
                   as <Link style={{color: "cornflowerblue"}} to='/myMaps'> MyMaps</Link>
@@ -46,9 +54,7 @@ const Development = () => {
                   MUI framework and more comfortable with media queries as I worked to make the site visually appealing and responsive.
                 </p>
               </div>
-              <div className="dev-link" style={{marginTop: '10px', marginBottom: '20px'}}>
-                <a target="_blank" href="https://curiouselephant322.github.io/development/" style={{color: 'cornflowerblue'}}>See the website!</a>
-                </div> 
+
             </div>
             </div>
         </div>

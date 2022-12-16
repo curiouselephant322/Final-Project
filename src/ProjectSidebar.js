@@ -16,7 +16,7 @@ const ProjectSidebar = ({name, description}) => {
             </Tooltip>
         }
         {(name == "Iterative Design" || name== "Responsive Redesign") &&
-          <div>
+          <div style={{display: 'flex', gap: '10px'}}>
               <Tooltip title="Balsamiq Wireframes">
               <img src="balsamicIcon.png" width="48px" height="48px"></img>
             </Tooltip>
@@ -35,17 +35,22 @@ const ProjectSidebar = ({name, description}) => {
         }
         <div style={{display: 'flex', gap: '10px'}}>
           <div>   
-            {name == "Development" || name == "MyMaps Hypertext Application" && 
-              <Tooltip title="Javascript">
-                <img src="jsIcon.png" width="48px" height="48px"></img>
-              </Tooltip>
+            {name != "Iterative Design" &&
+              <div style={{display: 'flex', gap: '10px'}}>  
+                {name == "Development" || name == "MyMaps Hypertext Application" && 
+                  <Tooltip title="Javascript">
+                    <img src="jsIcon.png" width="48px" height="48px"></img>
+                  </Tooltip>
+                  }
+                <Tooltip title="HTML">
+                  <img src="htmlIcon.png" width="48px" height="48px"></img>
+                </Tooltip>
+                <Tooltip title="CSS">
+                  <img src="cssIcon.png" width="48px" height="48px"></img> 
+                </Tooltip> 
+            </div> 
             }     
-              <Tooltip title="HTML">
-                <img src="htmlIcon.png" width="48px" height="48px"></img>
-              </Tooltip>
-              <Tooltip title="CSS">
-                <img src="cssIcon.png" width="48px" height="48px"></img> 
-              </Tooltip>      
+                  
             </div>      
         </div>
         { (name === "Development" || name=== "MyMaps Hypertext Application")  &&

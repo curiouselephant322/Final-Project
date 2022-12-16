@@ -64,7 +64,7 @@ const Iterative = () => {
                   as highly personalized care for every pet. 
                 </p>
                 <div style={{display: 'flex', justifyContent: 'flex-start'}}>
-                  <a target="__blank" className="dr-treat-anchor" href="https://www.drtreat.com/">
+                  <a style={{fontSize: '1.1em', color: 'cornflowerblue'}} target="__blank" className="dr-treat-anchor" href="https://www.drtreat.com/">
                     See the Dr. Treat Website!
                   </a>
                 </div>
@@ -288,17 +288,47 @@ const Iterative = () => {
             </a>
             </div>
             <h4>Analysis of Results</h4>
+            <p>Generally, our users thought the app was straightforward to use. The videos reveal, however, that we could have been a little more specific with our first task. 
+              As the functionality of the buttons to add specific appointments is missing, instead of asking the user to “schedule an appointment,” 
+               we should have made the instruction clearer by asking users to “navigate to the schedule appointments screen.”</p>
+            <p>Some of the main feedback as well as the final thoughts of each user is provided below:  </p>
+            <div style={{display: 'grid', gap: '1em', gridTemplateColumns: '1fr 1fr 1fr', justifyItems: 'center'}}>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1em'}}>
+                <div style={{color: 'cornflowerblue', fontWeight: 'bold', fontSize: '1.1em'}}>User 1</div>
+                <div>"Super well designed app, everythihg was super straightforward, very easy and 
+                  self explanatory.
+                </div>
+              </div>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1em'}}>
+                <div style={{color: 'green', fontWeight: 'bold', fontSize: '1.1em'}}>User 2</div>
+                <div>A little unclear what the emergency icon was at first.</div>
+                <div>"Overall I like the feel of this site, it feels playful and I like the colors. I think that it works 
+                  for being appealing especially for what the app is. Maybe when you start the app you could have a little run-through
+                  tutorial that explains where things are."
+                </div>
+              </div>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1em'}}>
+                <div style={{color: 'orange', fontWeight: 'bold', fontSize: '1.1em'}}>User 3</div>
+                <div>The red stands out really well for the emergency button.</div>
+                <div>"No final comments, super easy to navigate, thanks so much."</div>
+              </div>
+            </div>
             <hr style={{marginTop: '20px'}}></hr>
             <h2>Contacting the Startup </h2>
+            <p>Finally here is the email drafted to Dr. Treat, as well as their response!</p>
+            <div style={{display: 'flex', flexDirection: 'column' , gap: '2em', justifyContent: 'center', alignItems:'center'}}>
+              <img id="dr-treat-email" alt="Dr Treat Email" src="drTreatEmail.png"></img>
+              <img id="dr-treat-response" alt="Dr Treat Email Response" src="drTreatResponse.png"></img>
+            </div>
+
               <div></div>
                 <h2>Reflection</h2>
-                <p>EDIT EDIT</p>
-                <p>This project helped enforced my understanding of the concept of State in React. I became more familiar with the 
-                  MUI framework and more comfortable with media queries as I worked to make the site responsive.
+                <p>This project was a great exercise in creating a design with the interests of a company/brand, in this 
+                  case, the Dr. Treat startup, in mind. The detailed and thorough design process we followed allowed us to 
+                  experiment with and test several iterations of our website's design, helping us ultimately choose the most 
+                  optimal layout and content for the app. The next step might be to use the Figma prototypes to build the app 
+                  itself, and to present that finished product to Dr. Treat once again!
                 </p>
-                <div className="dev-link" style={{marginTop: '10px'}}>
-                <a href="https://curiouselephant322.github.io/development/" style={{color: 'cornflowerblue'}}>See the website!</a>
-                </div> 
             </div>
         </div>
         <NavigationButtons name="Iterative"/>

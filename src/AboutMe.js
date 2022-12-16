@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const AboutMe = () => {
   return (
     <div className="about-me-wrapper">
-      <p className='intro'>Welcome to my portfolio!</p>
+      <div style={{marginTop: '0.5em'}} className='intro'>Welcome to my portfolio!</div>
       <div className="student-intro">
         </div>
       <p style={{color: 'white'}}><span >Here is a collection of some of the projects I've been working on this past semester. </span></p>
@@ -25,7 +25,12 @@ const AboutMe = () => {
         <li>Learning languages</li>
       </ul>
         <hr></hr>
-      <p>Check out some of my links below: </p>
+      <div style={{display: 'flex', flexDirection: 'column', margin: '1em 0'}}>
+        <div>johndoe@gmail.com</div>
+        <div>123-456-7890</div>
+        <div>Fake Address 123, Providence RI</div>
+        <div></div>
+      </div>
       <div class="my-links">
         <Tooltip title="Linkedin">
           <div className="socials-icon-wrapper">
@@ -47,21 +52,6 @@ const AboutMe = () => {
         
 
       </div>
-      {/* <div>
-        Hello and welcome to my page!
-      </div>
-      <div>
-        I'm 
-      </div>
-      <div>
-        Please see projects to the right, most are front-end focused implemented with HTML and CSS.
-      </div>
-      <div>
-        Please see my resume and my links
-      </div>
-      <div>
-        Here are some of my strengths!
-      </div> */}
 
     </div>
   )

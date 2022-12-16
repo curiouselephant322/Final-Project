@@ -44,7 +44,7 @@ const Responsive = () => {
               <div className="dev-right-main">
               <h2>Goal and Importance</h2>
                 <p>The goal of this redesign was to practice the workflow of redesigning a simple website. The idea was to take 
-                  away the skills necessary to analyze and identify flaws in an existing interface, create low-fidelity and 
+                  away the skills necessary to analyze and identify flaws in an existing interface, create low and 
                   high-fidelity prototypes for various screen sizes, and build a responsive website based on those prototypes.                
                   </p>
                   <p>It is useful to be able to identify and analyze flaws in the interfaces we encouter browsing the web. 
@@ -92,7 +92,7 @@ const Responsive = () => {
                 </ul>
                 <img className='dev-image' id='dev-image-responsive' src='../webAim.png' align='right'></img>
                 <h4>Detecting Possible Accessibility Problems</h4>
-                <p>I used the <a target="__blank" style={{color:"cornflowerblue"}} href="https://wave.webaim.org/">WebAIM WAVE</a> tool to detect possible accessibility problems that I may have not caught. WebAIM's evaluation, 
+                <p>I used the <a target="__blank" style={{color:"cornflowerblue"}} href="https://wave.webaim.org/">WebAIM WAVE</a> tool to detect and describe possible accessibility problems. WebAIM's evaluation, 
                 shown in the image on the right, mainly emphasized the problems I had noticed. 
                 </p>
                 <p>
@@ -145,8 +145,8 @@ const Responsive = () => {
                 </div>
                 
                 <h4>Phase 3: High-fidelity Wireframing</h4>
-                <p>I used Figma to make a hi-fi prototype for mobile, tablet, and desktop. The numbers represent annotations, which can be 
-                    seen as the bottom of the pdf. </p>
+                <p>I used Figma to make a hi-fi prototype for mobile, tablet, and desktop. The numbers on the PDF below represent annotations, which can be 
+                    seen in detail at the bottom of the document. </p>
                 <div className="fi-content-container">
                   <div className="tabs-container" style={{display: 'flex', flexDirection: 'column', gap: '5px', justifyContent: 'flex-start'}}>
                     <button className='tab hi-fi-tab hi-fi-tab-mobile' onClick={(e) => handleTabChange(e, 0, 'hi-fi-tab')}>
