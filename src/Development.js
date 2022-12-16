@@ -24,7 +24,7 @@ const Development = () => {
         <div className="project-content-wrapper">
           <div style={{width: '97%'}}>
             <div className="project-right-wrapper">
-              <img className='dev-image' src='../Development.png' align='right'></img>
+              <img className='dev-image' src='Development.png' align='right'></img>
               <div className='dev-goal'>
               </div>
               <div className="dev-right-main">

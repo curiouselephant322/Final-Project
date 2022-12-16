@@ -5,7 +5,7 @@ import Card from './Card'
 
 const itemData = [
   {
-    img: '/MyMaps.png',
+    img: 'MyMaps.png',
     title: 'MyMaps Application',
     description: 'A powerful route/journey logging application with hypertext features, based around map nodes.',
     class: 'myMaps',
@@ -13,7 +13,7 @@ const itemData = [
     link: '/myMaps'
   },
   {
-    img: '/Development.png',
+    img: 'Development.png',
     title: 'Development',
     description: 'Building an interactive and responsive interface in React that gives information about the teams in the UEFA Champions league.',
     class: 'development',
@@ -21,7 +21,7 @@ const itemData = [
     link: '/development'
   },
   {
-    img:  '/Responsive.png',
+    img:  'Responsive.png',
     title: 'Responsive Redesign',
     description: 'Redesigning a poorly made website as a responsive site using a design workflow process. ',
     class: 'responsive',

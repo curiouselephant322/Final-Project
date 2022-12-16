@@ -40,7 +40,7 @@ const Responsive = () => {
         <div className="project-content-wrapper">
           <div style={{width: '95%'}}>
             <div className="project-right-wrapper">
-              <img className='dev-image' src='../Responsive.png' align='right'></img>
+              <img className='dev-image' src='Responsive.png' align='right'></img>
               <div className="dev-right-main">
               <h2>Goal and Importance</h2>
                 <p>The goal of this redesign was to practice the workflow of redesigning a simple website. The idea was to take 
@@ -90,7 +90,7 @@ const Responsive = () => {
                     <li>The link to Facebook and the company's phone number that appears while scrolling should not belong</li>
                   </ul>
                 </ul>
-                <img className='dev-image' id='dev-image-responsive' src='../webAim.png' align='right'></img>
+                <img className='dev-image' id='dev-image-responsive' src='webAim.png' align='right'></img>
                 <h4>Detecting Possible Accessibility Problems</h4>
                 <p>I used the <a target="__blank" style={{color:"cornflowerblue"}} href="https://wave.webaim.org/">WebAIM WAVE</a> tool to detect and describe possible accessibility problems. WebAIM's evaluation, 
                 shown in the image on the right, mainly emphasized the problems I had noticed. 
